@@ -43,13 +43,13 @@ const AppHeader = () => {
             </CNavLink>
           </CNavItem>
           <CNavItem className="perfect-menu-text">
-            <CNavLink href="#">Bookings</CNavLink>
+            <CNavLink to="/booking" component={NavLink}>Bookings</CNavLink>
           </CNavItem>
           <CNavItem className="perfect-menu-text">
-            <CNavLink href="#">Messages</CNavLink>
+            <CNavLink to="/message" component={NavLink}>Messages</CNavLink>
           </CNavItem>
           <CNavItem className="perfect-menu-text">
-            <CNavLink href="#">Library</CNavLink>
+            <CNavLink to="/library" component={NavLink}>Library</CNavLink>
           </CNavItem>
         </CHeaderNav>
         <CHeaderNav>

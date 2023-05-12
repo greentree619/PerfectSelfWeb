@@ -2,6 +2,7 @@ import { createStore } from 'redux'
 
 const initialState = {
   sidebarShow: false,
+  bannerbarShow: true,
 }
 
 const changeState = (state = initialState, { type, ...rest }) => {

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import {
   CAvatar,
@@ -45,6 +45,7 @@ import {
 } from '@coreui/icons'
 
 import WidgetsBrand from '../widgets/WidgetsBrand'
+import { useSelector, useDispatch } from 'react-redux'
 
 const progressExample = [
   { title: 'Visits', value: '29.703 Users', percent: 40, color: 'success' },
@@ -77,7 +78,16 @@ const progressGroupExample3 = [
 ]
 
 const Home = () => {
+  const dispatch = useDispatch()
   const random = (min, max) => Math.floor(Math.random() * (max - min + 1) + min)
+
+  dispatch({ type: 'set', bannerbarShow: true })
+  useEffect(() => {
+    return () => {
+      dispatch({ type: 'set', bannerbarShow: false })
+      console.log("leave home")
+    }
+}, [])
 
   return (
     <>
