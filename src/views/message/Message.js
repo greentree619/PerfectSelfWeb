@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import {
   CAvatar,
@@ -45,12 +45,31 @@ import {
 } from '@coreui/icons'
 
 import WidgetsBrand from '../widgets/WidgetsBrand'
+import { useSelector, useDispatch } from 'react-redux'
 
 const Message = () => {
+  const dispatch = useDispatch()
+
+  dispatch({ type: 'set', messageLayout: true })
+  useEffect(() => {
+    return () => {
+      dispatch({ type: 'set', messageLayout: false })
+    }
+  }, [])
 
   return (
     <>
-      
+      <CRow className='message-col'>
+        <CCol xs={3}>
+          <div className='message-background'>Main part</div>
+        </CCol>
+        <CCol xs={6}>
+          <div className='message-background'>Main part</div>
+        </CCol>
+        <CCol xs={3}>
+          <div className='message-background'>Main part</div>
+        </CCol>
+      </CRow>      
     </>
   )
 }

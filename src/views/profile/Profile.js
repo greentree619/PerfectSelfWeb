@@ -17,6 +17,7 @@ import {
   CTableHead,
   CTableHeaderCell,
   CTableRow,
+  CContainer,
 } from '@coreui/react'
 import { CChartLine } from '@coreui/react-chartjs'
 import { getStyle, hexToRgba } from '@coreui/utils'
@@ -50,7 +51,24 @@ const Profile = () => {
 
   return (
     <>
-      
+    <CContainer lg>
+      <CRow className='mt-3'>
+        <CCol xs={8}>
+          <div className='content-background'>Main part</div>
+        </CCol>
+        <CCol xs={4}>
+          <CCol xs={12}>
+            <div className='content-background'>Part 1</div>
+          </CCol>
+          <CCol className='mt-3' xs={12}>
+            <div className='content-background'>Part 2</div>
+          </CCol>
+          <CCol className='mt-3' xs={12}>
+            <div className='content-background'>Part 3</div>
+          </CCol>
+        </CCol>
+      </CRow>
+    </CContainer>
     </>
   )
 }

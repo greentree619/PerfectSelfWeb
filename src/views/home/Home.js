@@ -9,6 +9,7 @@ import {
   CCardFooter,
   CCardHeader,
   CCol,
+  CContainer,
   CProgress,
   CRow,
   CTable,
@@ -87,10 +88,11 @@ const Home = () => {
       dispatch({ type: 'set', bannerbarShow: false })
       console.log("leave home")
     }
-}, [])
+  }, [])
 
   return (
     <>
+    <CContainer lg>
       <div className="home-title">
         Sponsored Readers
       </div>
@@ -103,6 +105,7 @@ const Home = () => {
         Top Rated
       </div>
       <WidgetsBrand withCharts />
+    </CContainer>
     </>
   )
 }
