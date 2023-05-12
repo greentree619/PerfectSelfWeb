@@ -8,6 +8,8 @@ import DocsCallout from './DocsCallout'
 import DocsLink from './DocsLink'
 import DocsExample from './DocsExample'
 
+import AppReader from './content/AppReader'
+
 export {
   AppBreadcrumb,
   AppContent,
@@ -18,4 +20,5 @@ export {
   DocsCallout,
   DocsLink,
   DocsExample,
+  AppReader,
 }
