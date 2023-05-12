@@ -1,20 +1,19 @@
 import React from 'react'
 import { CFooter } from '@coreui/react'
+import ReactImg from 'src/assets/images/footer-image.svg'
+import {
+  CButton,
+} from '@coreui/react'
 
 const AppFooter = () => {
   return (
-    <CFooter>
+    <CFooter className="perfect-footer" style={{position:'relative'}}>
+      <p className="footer-brand">PerfectSelf</p>
       <div>
-        <a href="https://coreui.io" target="_blank" rel="noopener noreferrer">
-          CoreUI
-        </a>
-        <span className="ms-1">&copy; 2022 creativeLabs.</span>
+        <span className="ms-1 footer-text perfect-font">Get connected to the readers</span>
+        <CButton className="footer-button" color="light">View All</CButton>
       </div>
-      <div className="ms-auto">
-        <span className="me-1">Powered by</span>
-        <a href="https://coreui.io/react" target="_blank" rel="noopener noreferrer">
-          CoreUI React Admin &amp; Dashboard Template
-        </a>
+      <div className="ms-auto" style={{backgroundImage: `url(${ReactImg})`, height: '359px', width: '567px', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
       </div>
     </CFooter>
   )
