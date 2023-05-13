@@ -11,6 +11,7 @@ import DocsExample from './DocsExample'
 import AppReader from './content/AppReader'
 import BookingItem from './content/BookingItem'
 import LibFolder from './content/LibFolder'
+import LibFile from './content/LibFile'
 
 export {
   AppBreadcrumb,
@@ -25,4 +26,5 @@ export {
   AppReader,
   BookingItem,
   LibFolder,
+  LibFile,
 }
