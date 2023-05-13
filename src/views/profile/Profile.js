@@ -51,7 +51,7 @@ const Profile = () => {
 
   return (
     <>
-    <CContainer lg>
+    <CContainer fluid className='perfect-xpadding'>
       <CRow className='mt-3'>
         <CCol xs={8}>
           <div className='content-background'>Main part</div>

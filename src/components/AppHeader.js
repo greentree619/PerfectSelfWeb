@@ -24,7 +24,7 @@ const AppHeader = () => {
 
   return (
     <CHeader position="sticky">
-      <CContainer fluid>
+      <CContainer fluid className='perfect-xpadding'>
         {process.env.REACT_APP_HIDE_LEFTMENU == "false" && (
           <CHeaderToggler
             className="ps-1"
