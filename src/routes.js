@@ -6,6 +6,7 @@ const Booking = React.lazy(() => import('./views/booking/Booking'))
 const Message = React.lazy(() => import('./views/message/Message'))
 const Library = React.lazy(() => import('./views/library/Library'))
 const Profile = React.lazy(() => import('./views/profile/Profile'))
+const SearchReader = React.lazy(() => import('./views/searchReader/SearchReader'))
 const Colors = React.lazy(() => import('./views/theme/colors/Colors'))
 const Typography = React.lazy(() => import('./views/theme/typography/Typography'))
 
@@ -63,6 +64,7 @@ const routes = [
   { path: '/message', name: 'Message', element: Message },
   { path: '/library', name: 'Library', element: Library },
   { path: '/profile', name: 'Profile', element: Profile },
+  { path: '/search', name: 'Search Reader', element: SearchReader },
   { path: '/theme', name: 'Theme', element: Colors, exact: true },
   { path: '/theme/colors', name: 'Colors', element: Colors },
   { path: '/theme/typography', name: 'Typography', element: Typography },
