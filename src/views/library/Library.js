@@ -24,6 +24,8 @@ import { CChartLine } from '@coreui/react-chartjs'
 import { getStyle, hexToRgba } from '@coreui/utils'
 import CIcon from '@coreui/icons-react'
 import WidgetsBrand from '../widgets/WidgetsBrand'
+import WidgetsLibFolder from '../widgets/WidgetLibFolder'
+import WidgetsLibFile from '../widgets/WidgetLibFile'
 
 const Library = () => {
 
@@ -41,13 +43,13 @@ const Library = () => {
         <p className='comment-text'>Folders</p>
         </CCol>
         <CCol xs={12}>
-          
+          <WidgetsLibFolder />
         </CCol>
         <CCol xs={12}>
         <p className='comment-text'>Files</p>
         </CCol>
         <CCol xs={12}>
-          
+          <WidgetsLibFile />
         </CCol>
       </CForm>
     </CContainer>

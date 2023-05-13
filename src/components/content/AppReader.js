@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import star from '../../assets/images/star.svg';
 
 const AppReader = () => {
   return (
@@ -12,7 +13,7 @@ const AppReader = () => {
                 </div>
             </div>
             <div className='reader-img-score'>
-                <img src='https://' />
+                <img src={star}  />
                 5.0 (13)
             </div>
         </div>
