@@ -37,7 +37,7 @@ const Home = () => {
 
   return (
     <>
-    <CContainer lg>
+    <CContainer fluid className='perfect-xpadding'>
       <div className="home-title">
         Sponsored Readers
       </div>

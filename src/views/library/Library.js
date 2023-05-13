@@ -29,7 +29,7 @@ const Library = () => {
 
   return (
     <>
-    <CContainer lg>
+    <CContainer fluid className='perfect-xpadding'>
       <CForm className="row g-3 content-background mt-3 px-2">
         <CCol xs={12}>
           <p className='title-text'>Library</p>
