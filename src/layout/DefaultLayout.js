@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux'
 
 const DefaultLayout = () => {
   const bannerbarShow = useSelector((state) => state.bannerbarShow)
+  const messageLayout = useSelector((state) => state.messageLayout)
 
   return (
     <div>
@@ -14,7 +15,7 @@ const DefaultLayout = () => {
           {bannerbarShow && (<AppBreadcrumb />)}
           <AppContent />
         </div>
-        <AppFooter />
+        {messageLayout == false && (<AppFooter />)}
       </div>
     </div>
   )

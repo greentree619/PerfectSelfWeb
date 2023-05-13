@@ -106,10 +106,33 @@
 .message-background{
     background: #FFFFFF;
     border-radius: 0px;
+    height: 100%;
 }
 
-.message-col{
+.message-container{
+    --cui-gutter-x: 0.1rem;
+}
+
+.message-col {
     --cui-gutter-x: 1px;
+    height: calc(100vh - 65px) !important;
+    /* Presuming 10px header height */
+    padding-top: 1px;
+    /* Firefox */
+    -moz-box-sizing: border-box;
+    /* WebKit */
+    -webkit-box-sizing: border-box;
+    /* Standard */
+    box-sizing: border-box;
+}
+
+.message-lable{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
 }
 
 .title-text {
