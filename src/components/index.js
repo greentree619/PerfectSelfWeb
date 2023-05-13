@@ -9,6 +9,7 @@ import DocsLink from './DocsLink'
 import DocsExample from './DocsExample'
 
 import AppReader from './content/AppReader'
+import BookingItem from './content/BookingItem'
 
 export {
   AppBreadcrumb,
@@ -21,4 +22,5 @@ export {
   DocsLink,
   DocsExample,
   AppReader,
+  BookingItem,
 }

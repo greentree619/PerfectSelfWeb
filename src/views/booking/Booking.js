@@ -31,6 +31,7 @@ import CIcon from '@coreui/icons-react'
 import { Outlet, Link } from 'react-router-dom'
 
 import WidgetsBrand from '../widgets/WidgetsBrand'
+import { BookingItem } from 'src/components'
 
 const Booking = () => {
   const [activeKey, setActiveKey] = useState(1)
@@ -75,10 +76,19 @@ const Booking = () => {
               </CNavLink>
             </CNavItem>
           </CNav>
-          <CTabContent>
-            <CTabPane role="tabpanel" aria-labelledby="home-tab" visible={activeKey === 1}>
-              Upcomming
-            </CTabPane>
+            <CTabContent>
+              <CTabPane className='p-2' role="tabpanel" aria-labelledby="home-tab" visible={activeKey === 1}>
+                <CRow className='pt-2'>
+                  <CCol>
+                    <BookingItem />
+                  </CCol>
+                </CRow>
+                <CRow className='pt-2'>
+                  <CCol>
+                    <BookingItem />
+                  </CCol>
+                </CRow>
+              </CTabPane>
             <CTabPane role="tabpanel" aria-labelledby="profile-tab" visible={activeKey === 2}>
               Pending
             </CTabPane>

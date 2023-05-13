@@ -1,32 +1,55 @@
 import React from 'react'
+import {
+    CRow,
+    CCol,
+    CCard,
+    CButton,
+    CCardHeader,
+    CCardBody,
+    CCardImage,
+    CCardTitle,
+    CCardText,
+    CForm,
+    CFormInput,
+    CFormLabel,
+    CAlert,
+    CFormTextarea,
+    CDropdown,
+    CDropdownItem,
+    CDropdownToggle,
+    CDropdownMenu,
+    CContainer,
+    CSpinner,
+    CTabs,
+    CNav,
+    CNavItem,
+    CNavLink,
+    CTabContent,
+    CTabPane,
+  } from '@coreui/react'
+import CIcon from '@coreui/icons-react'
+import { cilCalendar, cilClock } from '@coreui/icons'
 
 const BookingItem = () => {
   return (
-    <div className='reader'>
-        <div className='reader-img'>
-            <div className='reader-img-name'>
-                <div>Reader Name</div>
-                <div className='reader-img-online'>
-                    <div className='reader-img-status'></div>
-                    <div>Online</div>
-                </div>
-            </div>
-            <div className='reader-img-score'>
-                <img src='https://' />
-                5.0 (13)
-            </div>
-        </div>
-        <div className='reader-availability'>
-            <div className='reader-availability-label'>Available on</div>
-            <div className='reader-availability-date'>Feb 25, 6:00 PM</div>
-            <div className='reader-availability-num'>+2</div>
-        </div>
-        <div className='reader-line'></div>
-        <div className='reader-rate'>
-            <div>Price</div>
-            <div>$20 / 15 min</div>
-        </div>
-    </div>
+      <>
+          <CCard style={{ width: '100%' }}>
+              {/* <CCardImage orientation="top" src={ReactImg} /> */}
+              <CCardBody>
+                  <CCardTitle className='booking-title'>Reading session with Jonathan Walker</CCardTitle>
+                  <CCardText className='booking-content'>
+                    <CIcon icon={cilCalendar} size="md" />&nbsp;16 Mar, 2023
+                    &nbsp;&nbsp;<CIcon icon={cilClock} size="md" />&nbsp;06:30 PM - 7:30PM
+                  </CCardText>
+                  <CCardText className='booking-content'>
+                    <CButton color="link" variant="ghost">View Script {">"}</CButton>
+                  </CCardText>
+                  <CButton color="primary" href="#">Join meeting</CButton>
+                  &nbsp; <CButton color="dark" variant="outline" href="#">Send message</CButton>
+                  &nbsp; <CButton  color="danger" variant="ghost" href="#">Cancel</CButton>
+              </CCardBody>
+          </CCard>
+      </>
   )
 }
 
