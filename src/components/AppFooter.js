@@ -7,7 +7,7 @@ import {
 
 const AppFooter = () => {
   return (
-    <CFooter className="perfect-footer" style={{position:'relative'}}>
+    <CFooter className="perfect-footer pt-3" style={{position:'relative'}}>
       <p className="footer-brand">PerfectSelf</p>
       <div>
         <span className="ms-1 footer-text perfect-font">Get connected to the readers</span>
