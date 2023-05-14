@@ -12,6 +12,7 @@ import AppReader from './content/AppReader'
 import BookingItem from './content/BookingItem'
 import LibFolder from './content/LibFolder'
 import LibFile from './content/LibFile'
+import FilterSetting from './content/FilterSetting'
 
 export {
   AppBreadcrumb,
@@ -27,4 +28,5 @@ export {
   BookingItem,
   LibFolder,
   LibFile,
+  FilterSetting,
 }
