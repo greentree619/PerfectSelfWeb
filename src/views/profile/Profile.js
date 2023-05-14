@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import {
   CAvatar,
@@ -18,6 +18,12 @@ import {
   CTableHeaderCell,
   CTableRow,
   CContainer,
+  CNav,
+  CNavLink,
+  CNavItem,
+  CTabContent,
+  CTabPane,
+  CImage,
 } from '@coreui/react'
 import { CChartLine } from '@coreui/react-chartjs'
 import { getStyle, hexToRgba } from '@coreui/utils'
@@ -43,32 +49,34 @@ import {
   cilPeople,
   cilUser,
   cilUserFemale,
+  cilBell,
+  cilCalendar,
+  cilClock,
 } from '@coreui/icons'
 
-import WidgetsBrand from '../widgets/WidgetsBrand'
+import WidgetMainProfile from '../widgets/WidgetMainProfile'
 
 const Profile = () => {
-
   return (
     <>
-    <CContainer fluid className='perfect-xpadding'>
-      <CRow className='mt-3'>
-        <CCol xs={8}>
-          <div className='content-background'>Main part</div>
-        </CCol>
-        <CCol xs={4}>
-          <CCol xs={12}>
-            <div className='content-background'>Part 1</div>
+      <CContainer fluid className='perfect-xpadding'>
+        <CRow className='mt-3'>
+          <CCol xs={8}>
+            <WidgetMainProfile/>
           </CCol>
-          <CCol className='mt-3' xs={12}>
-            <div className='content-background'>Part 2</div>
+          <CCol xs={4}>
+            <CCol xs={12}>
+              <div className='content-background'>Part 1</div>
+            </CCol>
+            <CCol className='mt-3' xs={12}>
+              <div className='content-background'>Part 2</div>
+            </CCol>
+            <CCol className='mt-3' xs={12}>
+              <div className='content-background'>Part 3</div>
+            </CCol>
           </CCol>
-          <CCol className='mt-3' xs={12}>
-            <div className='content-background'>Part 3</div>
-          </CCol>
-        </CCol>
-      </CRow>
-    </CContainer>
+        </CRow>
+      </CContainer>
     </>
   )
 }
