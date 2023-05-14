@@ -5,20 +5,34 @@ import { AppReader } from 'src/components'
 const WidgetReaderList = () => {
   
   return (
-    <CRow>
-      <CCol sm={6} lg={3}>
-        <AppReader />
-      </CCol>
-      <CCol sm={6} lg={3}>
-        <AppReader />
-      </CCol>
-      <CCol sm={6} lg={3}>
-        <AppReader />
-      </CCol>
-      <CCol sm={6} lg={3}>
-        <AppReader />
-      </CCol>
-    </CRow>
+    <>
+      <CRow className='row-cols-auto'>
+        <CCol>
+          <AppReader />
+        </CCol>
+        <CCol>
+          <AppReader />
+        </CCol>
+        <CCol>
+          <AppReader />
+        </CCol>
+        <CCol>
+          <AppReader />
+        </CCol>
+        <CCol>
+          <AppReader />
+        </CCol>
+        <CCol>
+          <AppReader />
+        </CCol>
+        <CCol>
+          <AppReader />
+        </CCol>
+        <CCol>
+          <AppReader />
+        </CCol>
+      </CRow>
+    </>
   )
 }
 

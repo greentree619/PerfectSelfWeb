@@ -19,7 +19,7 @@ import {
   CTableRow,
 } from '@coreui/react'
 
-import WidgetReaderList from '../widgets/WidgetReaderList'
+import WidgetTopReaders from '../widgets/WidgetTopReaders'
 import { useSelector, useDispatch } from 'react-redux'
 
 const Home = () => {
@@ -40,15 +40,15 @@ const Home = () => {
       <div className="home-title">
         Sponsored Readers
       </div>
-      <WidgetReaderList />
+      <WidgetTopReaders />
       <div className="home-title">
         Available Soon
       </div>
-      <WidgetReaderList />
+      <WidgetTopReaders />
       <div className="home-title">
         Top Rated
       </div>
-      <WidgetReaderList />
+      <WidgetTopReaders />
     </CContainer>
     </>
   )

@@ -26,6 +26,7 @@ import {
   CInputGroup,
   CInputGroupText,
   CDatePicker,
+  CFormSelect,
 } from '@coreui/react'
 import { CChartLine } from '@coreui/react-chartjs'
 import { getStyle, hexToRgba } from '@coreui/utils'
@@ -54,7 +55,6 @@ import {
   cilSearch,
 } from '@coreui/icons'
 
-import WidgetsBrand from '../widgets/WidgetsBrand'
 import WidgetReaderList from '../widgets/WidgetReaderList'
 import { FilterSetting } from 'src/components'
 
@@ -68,7 +68,21 @@ const SearchReader = () => {
             <FilterSetting/>            
           </CCol>
           <CCol xs={9}>
-            <WidgetReaderList />
+            <CRow className='my-2'>
+              <CCol className='text-start d-flex align-items-center filter-comment'>123 Readers listed </CCol>
+              <CCol className=''></CCol>
+              <CCol className='d-flex align-items-center justify-content-end filter-comment'>Sort by</CCol>
+              <CCol className=''>
+                <div className="align-self-center">
+                  <CFormSelect size="sm" aria-label="Small select example">
+                    <option>Recommended</option>
+                    <option value="1">Availability</option>
+                    <option value="2">Experience</option>
+                    <option value="3">Rating</option>
+                  </CFormSelect>
+                </div>
+              </CCol>
+            </CRow>
             <WidgetReaderList />
           </CCol>
         </CRow>
