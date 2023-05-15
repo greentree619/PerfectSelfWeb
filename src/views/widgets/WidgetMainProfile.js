@@ -66,21 +66,31 @@ const WidgetMainProfile = () => {
   return (
     <>
       <div className='content-background container p-4'>
-        <CRow>
+        <CRow className='pb-3'>
           <CCol className='col-sm-auto'>
             <CImage class="rounded float-start" src={avatar1} />
           </CCol>
-          <CCol className='col-restfill'>
-            <CRow>
-              <CCol>Reader Name</CCol>
-              <CCol><div className="avatar bg-success" style={{width:10, height:10}}></div>Online</CCol>
+          <CCol className='col-restfill d-flex align-content-between flex-wrap'>
+            <CRow className='align-items-center width-full'>
+              <CCol className='profile-reader-name col-sm-auto'>Reader Name</CCol>
+              <CCol className='profile-online'><div className="avatar bg-success" style={{width:10, height:10}}></div>Online</CCol>
               <CCol className='text-end'><CIcon icon={cilHeart} size="md" /></CCol>
             </CRow>
-            <CRow><CCol>Headlines Headlines Headlines Headlines</CCol></CRow>
-            <CRow><CCol>Skills and requirements matched:</CCol></CRow>
+            <CRow className='width-full'><CCol className='booking-title'>Headlines Headlines Headlines Headlines</CCol></CRow>
+            <CRow className='width-full'>
+              <CCol className='filter-subtitle col-sm-auto'>Skills and requirements matched:</CCol>
+              <CCol>
+                <CRow>
+                  <CCol sm="auto" className='border border-info rounded-1 mx-2' >Skill1</CCol>
+                  <CCol sm="auto" className='border border-info rounded-1 mx-2'>Skill2</CCol>
+                  <CCol sm="auto" className='border border-info rounded-1 mx-2'>Skill3</CCol>
+                  <CCol className='booking-title'>+2 more</CCol>
+                </CRow>
+              </CCol>
+            </CRow>
           </CCol>
         </CRow>
-        <CRow>
+        <CRow className='pb-3'>
           <CNav variant="tabs" role="tablist" className='tab-text'>
             <CNavItem>
               <CNavLink
@@ -122,10 +132,10 @@ const WidgetMainProfile = () => {
             </CTabPane>
           </CTabContent>
         </CRow>
-        <CRow className='profile-title'>
+        <CRow className='profile-title pb-2'>
           Experiences
         </CRow>
-        <CRow className='filter-subtitle'>
+        <CRow className='filter-subtitle pb-2'>
           Certificated Coach
         </CRow>
         <CRow>
@@ -133,12 +143,12 @@ const WidgetMainProfile = () => {
             <CImage src={ActorSchool} width={26} height={20}/> Actor School, Issued Jul 2020
           </CCol>
         </CRow>
-        <CRow>
+        <CRow className='pb-3'>
           <CCol>
             <CImage src={Endorsement} width={26} height={20}/> 2 endorsements
           </CCol>
         </CRow>
-        <CRow className='filter-subtitle'>
+        <CRow className='filter-subtitle pb-2'>
           Skills
         </CRow>
         <CRow>
