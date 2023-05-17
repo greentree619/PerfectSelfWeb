@@ -380,7 +380,37 @@
     line-height: 22px;
     color: #000000;
 }
-
 .width-full{
     width: 100%;
 }
+.profile-hourly-icon-container {
+    background-color: rgba(117, 135, 217, 0.2);
+}
+.profile-hourly-icon {
+    width: 100%;
+    height: 100%;
+    color: #516ED5;
+}
+.profile-hourly-rate {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 29px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+}
+.profile-hourly-per {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
