@@ -57,6 +57,7 @@ import {
 import WidgetMainProfile from '../widgets/WidgetMainProfile'
 import WidgetHourlySessionTotalhour from '../widgets/ReaderProfile/WidgetHourlySessionTotalhour'
 import WidgetAvailableTimeSlot from '../widgets/ReaderProfile/WidgetAvailableTimeSlot'
+import WidgetAvailableReaders from '../widgets/ReaderProfile/WidgetAvailableReaders'
 
 const Profile = () => {
   return (
@@ -74,7 +75,7 @@ const Profile = () => {
               <WidgetAvailableTimeSlot />
             </CCol>
             <CCol className='mt-3' xs={12}>
-              <WidgetHourlySessionTotalhour/>
+              <WidgetAvailableReaders/>
             </CCol>
           </CCol>
         </CRow>
