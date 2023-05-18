@@ -55,7 +55,8 @@ import {
 } from '@coreui/icons'
 
 import WidgetMainProfile from '../widgets/WidgetMainProfile'
-import WidgetHourlySessionTotalhour from '../widgets/WidgetHourlySessionTotalhour'
+import WidgetHourlySessionTotalhour from '../widgets/ReaderProfile/WidgetHourlySessionTotalhour'
+import WidgetAvailableTimeSlot from '../widgets/ReaderProfile/WidgetAvailableTimeSlot'
 
 const Profile = () => {
   return (
@@ -70,10 +71,10 @@ const Profile = () => {
               <WidgetHourlySessionTotalhour />
             </CCol>
             <CCol className='mt-3' xs={12}>
-              <div className='content-background'>Part 2</div>
+              <WidgetAvailableTimeSlot />
             </CCol>
             <CCol className='mt-3' xs={12}>
-              <div className='content-background'>Part 3</div>
+              <WidgetHourlySessionTotalhour/>
             </CCol>
           </CCol>
         </CRow>

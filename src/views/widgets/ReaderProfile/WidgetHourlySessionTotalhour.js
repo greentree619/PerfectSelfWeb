@@ -46,7 +46,7 @@ const WidgetHourlySessionTotalhour = () => {
                     </CCol>
                     <CCol xs={9} className="justify-content-start">
                         <CCol className='profile-hourly-rate'>15</CCol>
-                        <CCol className='profile-hourly-per'>Total hours</CCol>
+                        <CCol className='profile-hourly-per'>total hours</CCol>
                     </CCol>
                 </CRow>
             </CCol>

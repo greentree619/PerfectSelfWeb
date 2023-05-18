@@ -13,6 +13,8 @@ import BookingItem from './content/BookingItem'
 import LibFolder from './content/LibFolder'
 import LibFile from './content/LibFile'
 import FilterSetting from './content/FilterSetting'
+import TimeSlot from './content/TimeSlot'
+import TimeSlotShow from './content/TimeSlotShow'
 
 export {
   AppBreadcrumb,
@@ -29,4 +31,6 @@ export {
   LibFolder,
   LibFile,
   FilterSetting,
+  TimeSlot,
+  TimeSlotShow,
 }
